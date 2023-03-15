@@ -11,13 +11,20 @@ namespace ConsoleApp_Tarde
         private int Id;
         private string Descricao;
         private decimal Valor;
-
+        
         public Produto(int id, string descricao, decimal valor)
         {
             Id = id;
             Descricao = descricao;
             Valor = valor;
         }
+
+        public string ExibirDados()
+        {
+            return "Descricao" + Descricao + " R$ " + Valor;
+        }
+
+       
         public int getId()
         {
             return Id;
